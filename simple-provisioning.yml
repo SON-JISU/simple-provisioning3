@@ -72,7 +72,7 @@
           
   - name: Create ec2
     ec2:
-      key_name: :{{ ec2_key_name }}"
+      key_name: {{ ec2_key_name }}"
       instance_type: "{{ instance_type }}"
       image: "{{ instance_image }}"
       wait: no    # 다음 인스턴스 설치할 때 까지 기다리겠다는 의미 elb,alb 같은거 만들려면 yes, 즉 이중화 할꺼면 yes
